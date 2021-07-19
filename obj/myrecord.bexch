@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__myrecord.o
+[PROJECT FILES]
+C:\Users\User\Ada\Records_Ada\records.gpr
+20210719154102 dd129ea3f51701687557381475696521
+[BOUND OBJECT FILES]
+C:\Users\User\Ada\Records_Ada\obj\myrecord.o
+[GENERATED SOURCE FILES]
+b__myrecord.ads
+b__myrecord.adb
+b__myrecord.ali
+[RESULTING OPTIONS]
+-LC:\Users\User\Ada\Records_Ada\obj\
+-LC:\Users\User\Ada\Records_Ada\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
