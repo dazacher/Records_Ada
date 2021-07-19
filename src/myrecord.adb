@@ -12,12 +12,22 @@ procedure Myrecord is
       Bid_Tricks   : Trick_Range            := 0;
    end record;
 
-   North : Hand;
-begin
-   North.Point_Count := 14;
-   North.Quick_Tricks := 1.5;
-   North.Bid_Suit := Hearts;
-   North.Bid_Tricks := 2;
+   --  North : Hand;
 
-   TIO.Put_Line(Integer'Image(North.Point_Count));
+   North : Hand := (14, 1.5, Clubs, others => 0);
+   West  : Hand := (14, 1.5, Bid_Tricks => 0, Bid_Suit => Diamonds);
+   South : Hand := (Quick_Tricks => 1.5, Bid_Suit => Hearts, Others => 0);
+   East  : Hand := (Quick_Tricks => 1.5, Bid_Suit => Spades, Bid_Tricks | Point_Count => 0);
+begin
+   --  North.Point_Count := 14;
+   --  North.Quick_Tricks := 1.5;
+   --  North.Bid_Suit := Hearts;
+   --  North.Bid_Tricks := 2;
+   --
+   --  TIO.Put_Line(Integer'Image(North.Point_Count));
+
+   TIO.Put_Line (Suit'Image (North.Bid_Suit));
+   TIO.Put_Line (Suit'Image (West.Bid_Suit));
+   TIO.Put_Line (Suit'Image (South.Bid_Suit));
+   TIO.Put_Line (Suit'Image (East.Bid_Suit));
 end Myrecord;

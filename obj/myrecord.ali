@@ -6,18 +6,17 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_ENUMERATION_MAPS
 RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U myrecord%b		myrecord.adb		fa34c528 NE OO SU
+U myrecord%b		myrecord.adb		c1f224ec NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -31,13 +30,11 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D myrecord.adb		20210719192908 54c01045 myrecord%b
+D myrecord.adb		20210719194034 6f06f181 myrecord%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
-D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
-D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
@@ -56,22 +53,25 @@ X 1 ada.ads
 16K9*Ada 20e8 13|1r6 4r24
 X 9 a-textio.ads
 58K13*Text_IO 725e16 13|1w10 4r28
-506U14*Put_Line 13|22s8
+506U14*Put_Line 13|29s8 30s8 31s8 32s8
 X 13 myrecord.adb
-3U11*Myrecord 3b11 23l5 23t13
-4K12 TIO=4:28 22r4
-5E9 Suit 5e67 11r22
+3U11*Myrecord 3b11 33l5 33t13
+4K12 TIO=4:28 29r4 30r4 31r4 32r4
+5E9 Suit 5e67 11r22 29r18 30r18 31r18 32r18
 5n18 Pass{5E9} 11r48
-5n24 Clubs{5E9}
-5n31 Diamonds{5E9}
-5n41 Hearts{5E9} 19r22
-5n49 Spades{5E9}
+5n24 Clubs{5E9} 17r30
+5n31 Diamonds{5E9} 18r59
+5n41 Hearts{5E9} 19r54
+5n49 Spades{5E9} 20r54
 5n57 No_Trumps{5E9}
 6I12 Trick_Range{integer} 12r22
-8R9 Hand 13e14 15r12
-9i7 Point_Count{integer} 17m10 22r37
-10f7 Quick_Tricks{float} 18m10
-11e7 Bid_Suit{5E9} 19m10
-12i7 Bid_Tricks{6I12} 20m10
-15r4 North{8R9} 17m4 18m4 19m4 20m4 22r31
+8R9 Hand 13e14 17r12 18r12 19r12 20r12
+9i7 Point_Count{integer} 20m75
+10f7 Quick_Tricks{float} 19m21 20m21
+11e7 Bid_Suit{5E9} 18m47 19m42 20m42 29r36 30r35 31r36 32r35
+12i7 Bid_Tricks{6I12} 18m30 20m62
+17r4 North{8R9} 29r30
+18r4 West{8R9} 30r30
+19r4 South{8R9} 31r30
+20r4 East{8R9} 32r30
 
