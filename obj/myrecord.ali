@@ -9,11 +9,12 @@ RN
 RV NO_ENUMERATION_MAPS
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U myrecord%b		myrecord.adb		21c049e4 NE OO SU
+U myrecord%b		myrecord.adb		5eace01d NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -32,7 +33,7 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D myrecord.adb		20210720131250 8f349c89 myrecord%b
+D myrecord.adb		20210720132714 f0583570 myrecord%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -62,25 +63,41 @@ X 1 ada.ads
 16K9*Ada 20e8 13|1r6 4r24
 X 9 a-textio.ads
 58K13*Text_IO 725e16 13|1w10 4r28
-506U14*Put_Line 13|33s8 34s8 35s8 36s8 39s8 40s8 41s8 42s8 43s8
+463U14*Put 13|74s8 77s8
+506U14*Put_Line 13|55s8 56s8 57s8 58s8 61s8 62s8 63s8 64s8 65s8 67s8 68s8
+. 69s8 70s8 71s8 72s8 75s8 76s8 78s8 79s8 80s8 81s8 82s8 83s8 84s8 85s8
 X 13 myrecord.adb
-3U11*Myrecord 3b11 44l5 44t13
-4K12 TIO=4:28 33r4 34r4 35r4 36r4 39r4 40r4 41r4 42r4 43r4
-5E9 Suit 5e67 13r22 33r18 34r18 35r18 36r18 42r18
+3U11*Myrecord 3b11 86l5 86t13
+4K12 TIO=4:28 55r4 56r4 57r4 58r4 61r4 62r4 63r4 64r4 65r4 67r4 68r4 69r4
+. 70r4 71r4 72r4 74r4 75r4 76r4 77r4 78r4 79r4 80r4 81r4 82r4 83r4 84r4 85r4
+5E9 Suit 5e67 13r22 55r18 56r18 57r18 58r18 64r18 69r18 82r18
 5n18 Pass{5E9} 13r48
-5n24 Clubs{5E9} 20r30
-5n31 Diamonds{5E9} 21r59
+5n24 Clubs{5E9} 20r30 37r55 39r38
+5n31 Diamonds{5E9} 21r59 50r45
 5n41 Hearts{5E9}
 5n49 Spades{5E9} 24r54
 5n57 No_Trumps{5E9}
-6I12 Trick_Range{integer} 15r22
-8R9 Hand 16e14 20r12 21r12 23r12 24r12
-11i7 Point_Count{integer} 24m75 40r39
-12f7 Quick_Tricks{float} 24m21 41r37
-13e7 Bid_Suit{5E9} 21m47 24m42 33r36 34r35 35r36 36r35 42r36
-15i7 Bid_Tricks{6I12} 21m30 24m62 43r39
-20r4 North{8R9} 33r30
-21r4 West{8R9} 34r30
-23r4 South{8R9} 35r30 40r33 41r31 42r30 43r33
-24r4 East{8R9} 36r30
+6I12 Trick_Range{integer} 14r22
+8R9 Hand 16e14 20r12 21r12 23r12 24r12 32r21
+11i7 Point_Count{integer} 24m75 62r39 67r50 80r50
+12f7 Quick_Tricks{float} 24m21 63r37 68r48 81r48
+13e7 Bid_Suit{5E9} 21m47 24m42 55r36 56r35 57r36 58r35 64r36 69r47 82r47
+14i7 Bid_Tricks{6I12} 21m30 24m62 50m55 65r39 70r50 83r50
+20r4 North{8R9} 55r30
+21r4 West{8R9} 56r30
+23r4 South{8R9} 57r30 62r33 63r31 64r30 65r33
+24r4 East{8R9} 58r30
+26R9 Result 29e14 33r21
+27i7 Score{integer} 51m24 71r53 76r53 84r53
+28b7 Did_Win{boolean} 41m52 53m24 75r53 78r53 85r53
+31R9 Hand_Over 34e14 36r14 38r14 39r14 40r14
+32r7 Hand_Bid{8R9} 37m33 50m12 67r41 68r39 69r38 70r41 80r41 81r39 82r38
+. 83r41
+33r7 Hand_Result{26R9} 37m7 41m40 51m12 53m12 71r41 75r41 76r41 78r41 84r41
+. 85r41
+36r4 Final_N{31R9} 41m32 41r32 50m4 51m4 52r35 67r33 68r31 69r30 70r33 71r33
+38r4 Final_S{31R9} 75r33 76r33
+39r4 Final_E{31R9} 78r33
+40r4 Final_W{31R9} 52m4 53m4 80r33 81r31 82r30 83r33 84r33 85r33
+41b4 Win_Field{boolean} 72r33
 
